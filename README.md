@@ -8,6 +8,10 @@ Linguagem de programação **em português**, com declaração obrigatória de t
 É **compilada para Python e depois interpretada** (híbrida): o código passa por análise léxica, sintática e
 semântica e vira um programa `.py`; o Python o executa. Os programas PortuLang são arquivos `.pl`.
 
+É uma linguagem pequena e **pensada para aprendizado e demonstração**: boa para quem está começando a programar
+(em português, com tipos explícitos e mensagens de erro claras) e para mostrar, na prática, como funciona cada fase
+de um compilador.
+
 ```
 programa
     texto nome;
