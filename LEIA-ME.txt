@@ -1,0 +1,17 @@
+PortuLang Studio
+================
+
+Como usar
+  1. Extraia o zip inteiro (clique direito > Extrair tudo).
+  2. Abra a pasta "PortuLang" e de dois cliques em PortuLang.exe.
+
+Pronto: o Studio abre numa janela propria, sem navegador e sem instalar nada.
+Funciona em Windows 10/11 (usa o WebView2, que ja vem no Windows 11).
+
+Observacoes
+  - O que voce escreve, o tema e o tamanho dos paineis ficam guardados em
+    %LOCALAPPDATA%\PortuLang.
+  - Se o Windows SmartScreen avisar "aplicativo nao reconhecido", clique em
+    "Mais informacoes" > "Executar assim mesmo" (o programa ainda nao tem
+    assinatura digital).
+  - Para apagar tudo: delete a pasta PortuLang e a pasta acima.

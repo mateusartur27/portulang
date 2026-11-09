@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-BR" data-tema="escuro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<title>PortuLang</title>
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="stylesheet" href="style.css">
+<script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script>
+</head>
+<body>
+
+
+<header class="topo">
+  <div class="marca"><img src="logo.png" alt="" class="marca-ico">PortuLang</div>
+  <nav class="passos" id="passos" aria-label="Etapas"></nav>
+  <div class="topo-dir"><button id="btn-tema" class="tema" title="Alternar tema claro/escuro" aria-label="Alternar tema"></button></div>
+</header>
+
+<main class="palco" id="palco">
+  <section class="cartao codigo">
+    <div class="codigo-topo">
+      <div id="seletor" class="seletor"></div>
+      <span id="codigo-nota" class="nota"></span>
+      <div class="arquivo" id="arquivo">
+        <button id="btn-abrir" class="mini" title="Abrir um programa do seu computador (.pl). Você também pode arrastar o arquivo para o editor.">Abrir</button>
+        <button id="btn-salvar" class="mini" title="Salvar o programa no seu computador como arquivo .pl">Salvar</button>
+        <input type="file" id="entrada-arquivo" accept=".pl,.ptl,.txt,text/plain" hidden>
+      </div>
+      <button class="max" id="max-esq" title="Código em tela cheia (Esc volta)" aria-label="Código em tela cheia"></button>
+    </div>
+    <div class="editor" id="editor">
+      <div class="gutter" id="gutter"></div>
+      <div class="area">
+        <div class="camada"><div class="interno" id="interno"><pre id="destaque" aria-hidden="true"></pre></div></div>
+        <textarea id="codigo" spellcheck="false" autocapitalize="off" autocomplete="off" wrap="off" aria-label="Código-fonte"></textarea>
+      </div>
+    </div>
+    <div class="leitor" id="leitor" hidden></div>
+    <div class="status-div" id="status-div" role="separator" aria-orientation="horizontal" title="Arraste para ajustar a altura da lista de erros (duplo clique restaura)"><i></i></div>
+    <div class="status" id="problemas"></div>
+  </section>
+
+  <div class="divisor" id="divisor" role="separator" aria-orientation="vertical" title="Arraste para ajustar (duplo clique restaura)"><i></i></div>
+
+  <section class="cartao direita" id="direita">
+    <button class="max max-abs" id="max-dir" title="Análise em tela cheia (Esc volta)" aria-label="Análise em tela cheia"></button>
+    <div class="cab">
+      <h1 id="titulo"></h1>
+      <p id="frase"></p>
+      <div class="cab-linha"><button id="btn-saiba" class="link" aria-expanded="false">Saiba mais</button><span id="tempo" class="tempo" hidden></span></div>
+    </div>
+    <div class="cena" id="cena">
+      <canvas id="tela3d" aria-label="Cena 3D"></canvas>
+      <div class="sobre" id="sobre"></div>
+      <div class="dica" id="dica"></div>
+    </div>
+    <div class="saiba" id="saiba" hidden>
+      <button class="saiba-x" id="saiba-x" aria-label="Fechar" title="Fechar (Esc)">✕</button>
+      <div class="saiba-corpo" id="saiba-corpo"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="nav">
+  <button id="btn-voltar" class="sec">← Voltar</button>
+  <div class="legenda" id="legenda"></div>
+  <button id="btn-avancar" class="primario">Continuar →</button>
+</footer>
+
+<div class="tooltip" id="tooltip" hidden></div>
+<script type="module" src="app.js"></script>
+</body>
+</html>
