@@ -896,3 +896,19 @@ editorEl.addEventListener("drop", async (ev) => { ev.preventDefault(); editorEl.
 
 
 
+
+/* ------------------------------------------------------------ link de demonstração
+   ?demo=02_media&etapa=3&entradas=Ana|8|7,5&fim=1&tema=escuro  abre o exemplo já na etapa pedida (usado para gerar as imagens da apresentação) */
+(async () => {
+  const q = new URLSearchParams(location.search); if (!q.get("demo")) return;
+  const espera = (ms) => new Promise((r) => setTimeout(r, ms));
+  while (!S.exemplos.length) await espera(50);
+  if (q.get("tema")) aplicarTema(q.get("tema"));
+  const ex = S.exemplos.find((e) => e.nome === q.get("demo")); if (ex) carregarExemplo(ex);
+  const alvo = +q.get("etapa") || 0;
+  for (let n = 1; n <= alvo; n++) { await irEtapa(n); await espera(300); }
+  if (alvo === 5 && q.get("entradas")) {
+    S.entradas = q.get("entradas").split("|"); pausar(); await rodar(0); pausar();
+    if (q.get("fim")) { S.p = S.exec.trace.length - 1; atualizarExec(false); }
+  }
+})();

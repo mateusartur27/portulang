@@ -100,6 +100,10 @@ Cada nó da AST guarda a faixa de tokens que cobre (`ti`/`tf`), e cada passo da 
 é isso que liga cena, código e explicações. Os testes conferem que o Python gerado e a máquina virtual dão o mesmo
 resultado que o interpretador.
 
+## Documentação
+
+O documento final (especificação da linguagem, gramática EBNF, tabela de tokens, arquitetura, testes e uso) está em [docs/PortuLang-Documento-Final.pdf](docs/PortuLang-Documento-Final.pdf).
+
 ## Autores
 
 Mateus Artur, Rafael Araújo e Otávio de Pádua.
