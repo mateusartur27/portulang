@@ -15,3 +15,6 @@ Observacoes
     "Mais informacoes" > "Executar assim mesmo" (o programa ainda nao tem
     assinatura digital).
   - Para apagar tudo: delete a pasta PortuLang e a pasta acima.
+  - Se aparecer um erro dizendo que o Windows bloqueou arquivos (por exemplo
+    "Failed to resolve Python.Runtime.Loader.Initialize"): feche, clique com o botao
+    direito no arquivo .zip, Propriedades, marque "Desbloquear", OK, e extraia de novo.
