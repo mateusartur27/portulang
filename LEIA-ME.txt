@@ -18,3 +18,7 @@ Observacoes
   - Se aparecer um erro dizendo que o Windows bloqueou arquivos (por exemplo
     "Failed to resolve Python.Runtime.Loader.Initialize"): feche, clique com o botao
     direito no arquivo .zip, Propriedades, marque "Desbloquear", OK, e extraia de novo.
+  - Tudo grande demais ou pequeno demais? Use os botoes - e + no canto superior direito
+    (ou Ctrl e +/-, ou Ctrl com a roda do mouse). Em telas pequenas o programa ja abre reduzido.
+  - Se a janela propria nao puder abrir neste computador, o PortuLang abre no seu navegador;
+    deixe a mensagem aberta enquanto usa e clique em OK para encerrar.

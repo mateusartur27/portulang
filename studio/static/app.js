@@ -912,3 +912,13 @@ editorEl.addEventListener("drop", async (ev) => { ev.preventDefault(); editorEl.
     if (q.get("fim")) { S.p = S.exec.trace.length - 1; atualizarExec(false); }
   }
 })();
+
+/* ------------------------------------------------------------ zoom (só no aplicativo de janela) */
+window.addEventListener("pywebviewready", async () => {
+  const mostrar = (f) => { $("#zoom-pct").textContent = `${Math.round(f * 100)}%`; };
+  try { mostrar(await window.pywebview.api.zoom_atual()); } catch (e) { /* sem API */ }
+  $("#zoom").hidden = false;
+  $("#zoom-menos").addEventListener("click", async () => mostrar(await window.pywebview.api.zoom(-0.1)));
+  $("#zoom-mais").addEventListener("click", async () => mostrar(await window.pywebview.api.zoom(0.1)));
+  $("#zoom-pct").addEventListener("click", async () => mostrar(await window.pywebview.api.zoom_padrao()));
+});

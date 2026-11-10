@@ -44,6 +44,8 @@ Baixe o `PortuLang-windows.zip`, extraia e abra `PortuLang.exe`. Abre numa janel
 vem no Windows 11). Se o SmartScreen avisar, clique em *Mais informações → Executar assim mesmo* (o programa ainda não
 tem assinatura digital).
 
+Tudo grande demais? Use os botões − e + do cabeçalho (ou Ctrl + roda). Se a janela própria não abrir no computador, o PortuLang abre no navegador.
+
 Para gerar o zip você mesmo: `powershell -File build_exe.ps1` (precisa de Python 3.11+).
 
 ### Qualquer sistema, pelo navegador
