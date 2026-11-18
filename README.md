@@ -108,4 +108,4 @@ O documento final (especificação da linguagem, gramática EBNF, tabela de toke
 
 ## Autores
 
-Mateus Artur, Rafael Araújo e Otávio de Pádua.
+Mateus Artur Santos, Otávio de Pádua Rodrigues Ribeiro e Rafael Araújo Nascimento.
