@@ -104,7 +104,16 @@ resultado que o interpretador.
 
 ## Documentação
 
-O documento final (especificação da linguagem, gramática EBNF, tabela de tokens, arquitetura, testes e uso) está em [docs/PortuLang-Documento-Final.pdf](docs/PortuLang-Documento-Final.pdf).
+O projeto foi desenvolvido em quatro entregas, seguindo o cronograma da disciplina de Compiladores. Cada entrega tem seu documento, que mostra o processo de construção da linguagem passo a passo, do vocabulário até a execução dos programas:
+
+| Entrega | O que mostra | Documento |
+|---|---|---|
+| 1 | Especificação da linguagem e tabela de tokens | [Entrega-1-Especificacao.pdf](docs/Entrega-1-Especificacao.pdf) |
+| 2 | Gramática formal (EBNF) e analisador léxico | [Entrega-2-Gramatica-e-Lexer.pdf](docs/Entrega-2-Gramatica-e-Lexer.pdf) |
+| 3 | Analisador sintático, AST e análise semântica | [Entrega-3-Parser-AST-e-Semantico.pdf](docs/Entrega-3-Parser-AST-e-Semantico.pdf) |
+| 4 | Tradutor (Python, interpretador, máquina virtual), testes e projeto final | [Entrega-4-Tradutor-e-Projeto-Final.pdf](docs/Entrega-4-Tradutor-e-Projeto-Final.pdf) |
+
+O documento final, que reúne tudo (especificação da linguagem, gramática EBNF, tabela de tokens, arquitetura, testes e uso), está em [docs/PortuLang-Documento-Final.pdf](docs/PortuLang-Documento-Final.pdf).
 
 ## Autores
 
